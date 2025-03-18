@@ -1,1 +1,1 @@
-# saad_navttc_2025
+This repository contains projects, assignments, and learning materials created during my Certificate in Information Technology (Web Development) course under the National Vocational & Technical Training Commission (NAVTTC) 2025. The course focuses on building foundational and advanced skills in web development, including front-end and back-end technologies.
