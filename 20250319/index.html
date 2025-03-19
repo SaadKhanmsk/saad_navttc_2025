@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structure & Layouts</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    .header-msk {
+      display: flex;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dedede;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .media {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .main-box {
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 50px;
+      flex-direction: row;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      width: 32%;
+      background-color: #f7eaea;
+      padding: 15px;
+      border-radius: 10px;
+      gap: 15px;
+    }
+
+    .video-msk {
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <!-- header starts here -->
+    <header class="header-msk">
+      <div>
+        <img src="logo.webp" width="100" alt="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- header ends here -->
+
+    <!-- main content start here -->
+
+    <main>
+      <section class="video-media">
+        <video src="video.mp4" width="100%" controls></video>
+      </section>
+
+      <section class="media">
+        <h1>Listen Our Podcast</h1>
+        <audio src="audio.mp3" loop controls></audio>
+      </section>
+
+      <section class="main-box">
+        <div class="box">
+          <video
+            class="video-msk"
+            src="video.mp4"
+            width="100%"
+            controls
+          ></video>
+          <h4>This is the video 1</h4>
+        </div>
+        <div class="box">
+          <video
+            class="video-msk"
+            src="video.mp4"
+            width="100%"
+            controls
+          ></video>
+          <h4>This is the video 2</h4>
+        </div>
+
+        <div class="box">
+          <video
+            class="video-msk"
+            src="video.mp4"
+            width="100%"
+            controls
+          ></video>
+          <h4>This is the video 3</h4>
+        </div>
+        <div class="box">
+          <video
+            class="video-msk"
+            src="video.mp4"
+            width="100%"
+            controls
+          ></video>
+          <h4>This is the video 4</h4>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
