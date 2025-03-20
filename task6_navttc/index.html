@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+      }
+      .containner {
+        background-color: #fafafa;
+        width: 500px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px 2px rgb(180, 180, 180);
+        margin: auto;
+      }
+
+      td,
+      th {
+        border: 1px solid black;
+        text-align: LEFT;
+        padding: 15px;
+        width: 40%;
+        margin: 0px;
+      }
+      P {
+        margin: 5px 0px 0px 0px;
+        font-size: 14px;
+      }
+
+      .info-msk {
+        padding: 20px;
+        background-color: green;
+        color: white;
+        text-align: center;
+      }
+      .btn-msk {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Report</h2>
+    <section class="containner">
+      <table>
+        <thead>
+          <th class="info-msk" colspan="2">Infomation</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>NAME</td>
+            <td>
+              <input type="text" />
+              <p>ENTER YOUR FULL NAME</p>
+            </td>
+          </tr>
+          <tr>
+            <td>EMAIL</td>
+            <td>
+              <input type="email" />
+              <p>ENTER AN INTERNET CONTACT ADDRESS</p>
+            </td>
+          </tr>
+          <tr>
+            <td>ADDRESS</td>
+            <td>
+              <input type="email" />
+              <p>COMPLETE ADDRESS</p>
+            </td>
+          </tr>
+          <tr>
+            <td>COUNTRY</td>
+            <td>
+              <select name="COUNTRY">
+                <option value="UK" disabled selected>SELECT COUNTRY</option>
+                <option value="PK">Pakistan</option>
+                <option value="UK">United States</option>
+                <option value="JA">Japan</option>
+                <option value="GE">Germany</option>
+                <option value="UAE">United Arab Emirates</option>
+                <option value="AUS">Australia</option>
+                <option value="UKD">United Kingdom</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>GENDER</td>
+            <td>
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">MALE</label>
+
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">FEMALE</label>
+            </td>
+          </tr>
+          <tr>
+            <td>HOBBIES</td>
+            <td>
+              <input type="checkbox" id="READING1" />
+              <label for="READING1"> READING</label><br />
+              <input type="checkbox" id="LISTENING1" />
+              <label for="LISTENING1"> LISTENING</label><br />
+              <input type="checkbox" id="GARDENING1" />
+              <label for="GARDENING1"> GARDENING</label><br />
+              <input type="checkbox" id="SWIMMING1" />
+              <label for="SWIMMING1"> SWIMMING</label><br />
+              <input type="checkbox" id="ATHELETICS1" />
+              <label for="ATHELETICS1">ATHELETICS</label><br />
+
+              <p>CHECK ALL THAT APPLY</p>
+            </td>
+          </tr>
+          <tr>
+            <td>YOUR WEB SITE</td>
+            <td>
+              <input type="URL" placeholder="https://" />
+              <p>PROVIDE YOUR WEBSITE URL IF EXIST (NOT NECESSARY)</p>
+            </td>
+          </tr>
+          <tr>
+            <td>OTHER INFORMATION ABOUT YOU</td>
+            <td>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                cols="30"
+                placeholder="Type your message here..."
+              ></textarea
+              ><br />
+
+              <p>WRITE ANY OTHER INFORMATION</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="btn-msk">
+              <input type="submit" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
