@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overlaping using margins</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+
+      padding: 0px;
+    }
+    body {
+      padding: 60px;
+    }
+    .box1 {
+      background-color: black;
+      width: 200px;
+      min-height: 130px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .box2 {
+      background-color: green;
+      width: 200px;
+      min-height: 60px;
+      color: white;
+      margin: -20px 0px 0px -20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .button-1 {
+      padding-top: 80px;
+    }
+    .button-1 {
+      display: flex;
+      gap: 30px;
+    }
+    button{
+      padding: 7px 20px 7px 20px;
+      background-color: aqua;
+      border-radius: 5px;
+      border: 1px solid #dedede;
+      cursor: pointer;
+
+    }
+    button:hover{
+  background-color: blue;
+  color: white;
+  transition: 0.3s;
+
+  scale: 1.08;
+    }
+  </style>
+  <body>
+    <section class="box1">this is the box 1</section>
+
+    <section class="box2">this is the box 2</section>
+
+    <section class="button-1">
+      <a href="index2.html" target="_blank">
+        <button>Index 2 </button>
+      </a>
+      <a href="index3.html" target="_blank">
+        <button>Index 3</button>
+      </a>  <a href="index4.html" target="_blank">
+        <button>Index 4</button>
+    
+    </section>
+  </body>
+</html>
