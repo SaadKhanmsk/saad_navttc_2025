@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons with images</title>
+    <style>
+      button {
+        border: none;
+        background: transparent;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .button-msk {
+        display: flex;
+        gap: 30px;
+      }
+
+      .main-con {
+        background-color: #fafafa;
+        width: 300px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-con">
+      <h2>Buttons with images</h2>
+
+      <form method="GET">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <div class="button-msk">
+          <button type="submit">
+            <img src="https://picsum.photos/50" alt="Submit" width="40" />
+            Submit
+          </button>
+
+          <button type="reset">
+            <img src="https://picsum.photos/50" alt="Reset" width="40" /> Reset
+          </button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
