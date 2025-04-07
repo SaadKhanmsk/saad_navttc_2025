@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Use of on Mouse Over Event</title>
+  </head>
+  <style>
+    img {
+      transition: transform 0.5s ease;
+      border-radius: 20px;
+    }
+  </style>
+  <body>
+    <img
+      src="https://picsum.photos/300/300"
+      onmouseover="this.style.transform='translateX(100px)'"
+      onmouseout="this.style.transform='translateX(0)'"
+    />
+  </body>
+</html>
