@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If else Condition</title>
+  </head>
+  <body>
+    <h2 id="gtmess"></h2>
+    <script>
+      let hour = Number(prompt("Please enter the current hour"));
+
+      let gtmessElement = document.getElementById("gtmess");
+
+      if (hour >= 0 && hour <= 23) {
+        if (hour < 12) {
+          gtmessElement.textContent = "Good Morning!";
+        } else {
+          gtmessElement.textContent = "Good Afternoon!";
+        }
+      } else {
+        gtmessElement.textContent =
+          "Invalid input! Please enter a number between 0 and 23.";
+      }
+    </script>
+  </body>
+</html>
