@@ -1,0 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 81px;
+  border-bottom: 1px solid #dedede;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #f8f9fa;
+}
+
+.logo {
+  width: 150px;
+  height: 58px;
+  padding-top: 5px;
+}
+
+.nav,
+a {
+  font-size: 14px;
+  display: flex;
+
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+  padding: 9px 20px 9px 20px;
+  border-radius: 6px;
+}
+
+a:hover {
+  color: white;
+  background-color: #6c63ff;
+}
+
+li a {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#icom-i {
+  font-size: 12px;
+}
+
+.hero {
+  display: flex;
+  width: 950px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 140px;
+}
+
+.hbox2,
+.hbox1 {
+  width: 50%;
+}
+.img-hero {
+  border: 1px solid #dedede;
+  border-radius: 8px;
+}
+.hbox1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+
+.btn-h {
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #2b2539;
+  border-radius: 3px;
+  color: #2b2539;
+  font-weight: 500;
+}
+
+.heading1 {
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.dual-heading {
+  color: #6c63ff;
+}
+
+.heading2 {
+  color: #2b2539;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.feature-list li {
+  font-size: 14px;
+  list-style: none;
+  color: #2b2539;
+}
+
+.button-section {
+  display: flex;
+  gap: 8px;
+  padding-top: 20px;
+}
+
+.button-1 {
+  background-color: white;
+  border: 1px solid #6c63ff;
+  color: #6c63ff;
+  padding: 7px 42px 7px 42px;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button-1:hover,
+.button-2:hover {
+  scale: 1.08;
+  transition: 0.3s;
+}
+
+.button-2 {
+  background-color: #6c63ff;
+  border: 1px solid #6c63ff;
+  color: white;
+  padding: 7px 42px 7px 42px;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.service {
+  /* display: flex; */
+  width: 950px;
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  margin: auto;
+  gap: 10px;
+}
+
+.service-inner {
+  width: 550px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding-top: 40px;
+}
+
+.service-inner img {
+  width: 100%;
+}
